@@ -14,10 +14,10 @@
       </div>
       <div class="content-wrapper">
         <div v-if="button1 === true">
-          <router-link to="/button1">{{button1}}</router-link>
+          <button1></button1>
         </div>
         <div v-if="button2 === true">
-          <router-link to="/button2">{{button2}}</router-link>
+          <button2></button2>
         </div>
       </div>
     </div>
@@ -25,6 +25,8 @@
 </template>
 
 <script>
+import button1 from './components/button1';
+import button2 from './components/button2';
 export default {
   data() {
     return {
@@ -34,11 +36,17 @@ export default {
   },
   methods: {
     clickbutton1() {
-      this.button1 = !this.button1;
+      this.button1 = true;
+      this.button2 = false;
     },
     clickbutton2() {
-      this.button2 = !this.button2;
+      this.button1 = false;
+      this.button2 = true;
     }
+  },
+  components: {
+    button1,
+    button2
   }
 }
 </script>
