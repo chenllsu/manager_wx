@@ -17,7 +17,7 @@
           <router-link to="/button1">{{button1}}</router-link>
         </div>
         <div v-if="button2 === true">
-          <router-link to="/button2"></router-link>
+          <router-link to="/button2">{{button2}}</router-link>
         </div>
       </div>
     </div>
