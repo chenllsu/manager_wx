@@ -1,6 +1,6 @@
 <template>
   <div>
-    find
+    查询
   </div>
 </template>
 

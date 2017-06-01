@@ -1,6 +1,6 @@
 <template>
   <div>
-    add
+    增加
   </div>
 </template>
 
