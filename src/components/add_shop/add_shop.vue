@@ -1,6 +1,6 @@
 <template>
   <div>
-    增加
+    增加信息
   </div>
 </template>
 
